@@ -14,6 +14,6 @@ class PageController extends Controller
         
         
         // 5. passare i record alla view
-        return view('pages.welcome', compact('movie'));
+        return view('pages.welcome', compact('movies'));
     }
 }
