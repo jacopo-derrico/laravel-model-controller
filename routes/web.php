@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Guest\PageController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Home\WelcomeController as WelcomeController;
@@ -15,9 +16,4 @@ use App\Http\Controllers\Home\WelcomeController as WelcomeController;
 |
 */
 
-Route::get('/', function () {
-
-    return view('pages.welcome');
-})->name('homePage');
-
-
+Route::get('/', [PageController::class, 'index'])->name('homePage');
