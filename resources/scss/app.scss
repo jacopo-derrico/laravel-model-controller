@@ -1,8 +1,14 @@
-/*resources/scss/app.scss*/
-@import "bootstrap/scss/bootstrap";
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
 
-main
-{
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+
+main {
     background-image: url('../img/page_bg.jpg');
     background-position: center;
     background-size: cover;
